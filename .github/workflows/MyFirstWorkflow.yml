@@ -7,8 +7,13 @@ on:
         workflow_dispatch
 jobs: 
   MyFirstJob:
-    runruns-on: 
+    runs-on: 
       ubuntu-latest
+
+   steps:
+        - run: echo "Hello world!"   
+
+      
 
 
 
