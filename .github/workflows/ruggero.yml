@@ -1,4 +1,7 @@
 # Example workflow file
+name: Ruggero workflow
+
+
 on:
   workflow_dispatch:
     inputs:
