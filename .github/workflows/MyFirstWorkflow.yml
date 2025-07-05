@@ -22,4 +22,12 @@ jobs:
         - name: List files in the directory
           run: | 
             echo "The repository ${{ github.repository }} contains the following files:"
-            tree        
+            tree
+
+        - name: mah
+          run: git clone https://github.com/ruggeromontesi/seb-task.git
+
+        - name : mah-1
+          run: cd seb-task && ls -al
+
+        
