@@ -15,3 +15,13 @@ on:
         description: 'Test scenario tags'
         required: false
         type: string
+
+
+jobs:
+  MyFirstJob:
+    runs-on:
+      ubuntu-latest
+
+    steps:
+        - run: echo "Hello world!"
+          
