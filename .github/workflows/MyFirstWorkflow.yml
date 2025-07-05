@@ -7,10 +7,7 @@ on:
 
   workflow_dispatch:
     inputs:
-      tags:
-        description: 'desc'
-        required: false
-        type: string
+
 
 jobs: 
   MyFirstJob:
