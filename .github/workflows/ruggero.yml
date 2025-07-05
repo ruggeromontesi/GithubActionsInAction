@@ -1,0 +1,17 @@
+# Example workflow file
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+          - debug
+          - warning
+          - error
+      tags:
+        description: 'Test scenario tags'
+        required: false
+        type: string
