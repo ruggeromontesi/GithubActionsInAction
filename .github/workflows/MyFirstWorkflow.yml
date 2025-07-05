@@ -5,8 +5,13 @@ on:
     branches: 
       - main
 
-  workflow_dispatch:    
- 
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'desc'
+        required: false
+        type: string
+
 jobs: 
   MyFirstJob:
     runs-on: 
