@@ -31,6 +31,4 @@ jobs:
           run: cd seb-task && ls -al
 
         - name: mah-02
-          run: cd seb-task && mvn clean install 
-
-        
+          run: cd seb-task && mvn clean install        
