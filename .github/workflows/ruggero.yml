@@ -1,33 +1,34 @@
 # Example workflow file
 name: Ruggero workflow
 
-
 on:
   workflow_dispatch:
     inputs:
       logLevel:
-        description: 'Log level'
+        description: "Log level"
         required: true
-        default: 'warning'
+        default: "warning"
         type: choice
         options:
           - debug
           - warning
           - error
       tags:
-        description: 'Test scenario tags'
+        description: "Test scenario tags"
         required: false
         type: string
-  push:
-    branches: 
-      - '**cat**'
+      variabile_a:
+        description: variabile a
+        required: true
+        type: integer
 
+  push:
+    branches:
+      - "**cat**"
 
 jobs:
   Esempio:
-    runs-on:
-      ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
-        - run: echo "Hello world!"
-          
+      - run: echo "Hello world!"
