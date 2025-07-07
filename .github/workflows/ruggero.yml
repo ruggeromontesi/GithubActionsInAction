@@ -20,7 +20,7 @@ on:
         type: string
   push:
     branches: 
-      - 'release/**'
+      - '**cat**'
 
 
 jobs:
