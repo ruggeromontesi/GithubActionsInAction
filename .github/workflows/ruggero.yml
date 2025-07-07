@@ -27,6 +27,9 @@ on:
       - "**cat**"
       - "main"
 
+  repository_dispatch:
+    types: event1
+
 jobs:
   Esempio:
     runs-on: ubuntu-latest
