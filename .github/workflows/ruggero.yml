@@ -2,34 +2,22 @@
 name: Ruggero workflow
 
 on:
-  repository_dispatch:
-    types: [event1, event2]
-  push:
-    branches:
-      - "**cat**"
-      - "main"
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: "Log level"
+        required: true
+        default: "warning"
+        type: choice
+        options:
+          - debug
+          - warning
+          - error
 
-    workflow_dispatch:
-      inputs:
-        logLevel:
-          description: "Log level"
-          required: true
-          default: "warning"
-          type: choice
-          options:
-            - debug
-            - warning
-            - error
-
-        tags:
-          description: "Test scenario tags"
-          required: false
-          type: string
-
-        variabile_a:
-          description: variabile a
-          required: true
-          type: integer
+      variabile_a:
+        description: variabile a
+        required: true
+        type: integer
 
 jobs:
   Esempio:
