@@ -10,27 +10,26 @@ on:
       - "main"
 
     workflow_dispatch:
+      inputs:
+        logLevel:
+          description: "Log level"
+          required: true
+          default: "warning"
+          type: choice
+          options:
+            - debug
+            - warning
+            - error
 
-    inputs:
-      logLevel:
-        description: "Log level"
-        required: true
-        default: "warning"
-        type: choice
-        options:
-          - debug
-          - warning
-          - error
+        tags:
+          description: "Test scenario tags"
+          required: false
+          type: string
 
-      tags:
-        description: "Test scenario tags"
-        required: false
-        type: string
-
-      variabile_a:
-        description: variabile a
-        required: true
-        type: integer
+        variabile_a:
+          description: variabile a
+          required: true
+          type: integer
 
 jobs:
   Esempio:
