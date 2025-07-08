@@ -21,12 +21,10 @@ on:
         description: variabile a
         required: true
         type: integer
-
   push:
     branches:
       - "**cat**"
       - "main"
-
   repository_dispatch:
     types: event1
 
