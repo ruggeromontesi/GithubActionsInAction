@@ -3,7 +3,7 @@ name: Ruggero workflow
 
 on:
   repository_dispatch:
-    types: event1
+    types: [event1, event2]
 
 jobs:
   Esempio:
