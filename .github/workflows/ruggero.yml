@@ -50,4 +50,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.2
       - name: run
+        run: ls -al
+      - name: run
         run: cd ./GithubActionsInAction && npm run dev
