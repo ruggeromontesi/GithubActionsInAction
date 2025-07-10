@@ -57,3 +57,9 @@ jobs:
         run: npm install
       - name: run
         run: npm run dev
+  job3:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: stop
+        uses: sleep 60 && npx kill-port 5173
