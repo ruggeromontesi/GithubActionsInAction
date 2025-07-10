@@ -49,9 +49,3 @@ jobs:
     steps:
       - name: run
         run: cd ./GithubActionsInAction && npm run dev
-  job3:
-    needs: job1
-    runs-on: ubuntu-latest
-    steps:
-      - name: stop
-      - run: sleep 60 && npx kill-port 5173
