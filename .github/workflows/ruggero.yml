@@ -47,5 +47,7 @@ jobs:
     needs: job1
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
       - name: run
         run: cd ./GithubActionsInAction && npm run dev
