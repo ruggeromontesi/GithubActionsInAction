@@ -25,7 +25,6 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello world!"
       - name: mah
         run: git clone https://github.com/ruggeromontesi/GithubActionsInAction.git
 
