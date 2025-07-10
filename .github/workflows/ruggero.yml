@@ -62,4 +62,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: stop
-        uses: sleep 60 && npx kill-port 5173
+        run: sleep 60 && npx kill-port 5173
