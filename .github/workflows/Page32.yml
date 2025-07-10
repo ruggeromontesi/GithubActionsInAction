@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Print var1
         run: |
-          echo "var1 = ${{ github.event.client_payload_var1 }}"
+          echo "var1 = ${{ github.event.client_payload.var1 }}"
