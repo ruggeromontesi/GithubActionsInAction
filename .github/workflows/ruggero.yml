@@ -41,3 +41,12 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4.2.2
+      
+      - name: install
+        run: npm install
+      - name: build
+        run: npm run build
+      - name: start
+        run: npm run dev
+      - name: stop
+        run: npx kill-port 5173 
