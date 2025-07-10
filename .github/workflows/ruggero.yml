@@ -43,7 +43,15 @@ jobs:
         run: npm install
       - name: build
         run: npm run build
-      - name: start
-        run: npm run dev
+          
+  job2:
+    needs: Esempio
+    runs-on: ubuntu-latest
+    steps:
+      - name: run
+        run: cd ./GithubActionsInAction && npm run dev
+  job3:
+    runs-on: ubuntu-latest
+    steps:
       - name: stop
-        run: npx kill-port 5173 
+      - run: sleep 30 && npx kill-port 5173
