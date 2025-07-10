@@ -1,4 +1,4 @@
-name: Page 32 workflow
+name: page_32_workflow
 
 on: 
   repository_dispatch:
