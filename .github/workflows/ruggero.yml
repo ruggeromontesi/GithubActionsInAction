@@ -25,13 +25,13 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: mah
+      - name: Clone this repository
         run: git clone https://github.com/ruggeromontesi/GithubActionsInAction.git
 
-      - name: mah-1
+      - name: cd into folder
         run: cd ./GithubActionsInAction && ls -al
 
-      - name: mah-03
+      - name: delete folder
         run: rm -rf ./GithubActionsInAction
 
       - name: Checkout
@@ -52,4 +52,4 @@ jobs:
       - name: run
         run: ls -al
       - name: run
-        run: cd ./GithubActionsInAction && npm run dev
+        run: npm run dev
