@@ -1,6 +1,6 @@
 name: page_32_workflow
 
-on: 
+on:
   repository_dispatch:
     types: [event3, event4]
 
@@ -8,7 +8,5 @@ jobs:
   job_1:
     runs-on: ubuntu-latest
     steps:
-      - name:  Print var1
-        run: echo "var1 = {{ github.event3.payload.client_payload_var1}}"
-
-
+      - name: Print var1
+        run: echo "var1 = ${{github.event3.payload.client_payload_var1}}"
