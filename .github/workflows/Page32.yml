@@ -1,7 +1,8 @@
 name: Page 32 workflow
 
-on: repository_dispatch
-  types: [event3, event4]
+on: 
+  repository_dispatch:
+    types: [event3, event4]
 
 jobs:
   job_1:
