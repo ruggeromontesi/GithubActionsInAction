@@ -33,9 +33,6 @@ jobs:
       - name: mah-1
         run: cd ./GithubActionsInAction && ls -al
 
-      - name: mah-02
-        run: cd ./GithubActionsInAction && npm install && npm run dev
-
       - name: mah-03
         run: rm -rf ./GithubActionsInAction
 
