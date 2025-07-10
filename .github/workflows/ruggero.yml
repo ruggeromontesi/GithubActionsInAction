@@ -22,9 +22,8 @@ on:
         type: integer
 
 jobs:
-  Esempio:
+  job1:
     runs-on: ubuntu-latest
-
     steps:
       - run: echo "Hello world!"
       - name: mah
@@ -45,13 +44,14 @@ jobs:
         run: npm run build
           
   job2:
-    needs: Esempio
+    needs: job1
     runs-on: ubuntu-latest
     steps:
       - name: run
         run: cd ./GithubActionsInAction && npm run dev
   job3:
+  needs: job1
     runs-on: ubuntu-latest
     steps:
       - name: stop
-      - run: sleep 30 && npx kill-port 5173
+      - run: sleep 60 && npx kill-port 5173
