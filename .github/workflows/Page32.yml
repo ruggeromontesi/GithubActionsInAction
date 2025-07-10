@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print var1
-        run: echo "var1 = ${{ github.event.client_payload.var1 }} \ var2 = ${{ github.event.client_payload.var1 }}"
+        run: echo "var1 = ${{ github.event.client_payload.var1 }} \ var2 = ${{ github.event.client_payload.var2 }}"
