@@ -37,12 +37,12 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4.2.2
-      
+
       - name: install
         run: npm install
       - name: build
         run: npm run build
-          
+
   job2:
     needs: job1
     runs-on: ubuntu-latest
@@ -50,7 +50,7 @@ jobs:
       - name: run
         run: cd ./GithubActionsInAction && npm run dev
   job3:
-  needs: job1
+    needs: job1
     runs-on: ubuntu-latest
     steps:
       - name: stop
