@@ -17,7 +17,14 @@ jobs:
       - name: output something
         run: echo "input uno vale + ${{inputs.input_1}}"
   lavoro_2:
+    needs: lavoro_1
     runs-on: windows-latest
     steps:
       - name: output input2
         run: echo "input 2 vale  + $ {{inputs.input_2}}"
+  lavoro_3:
+    needs: lavoro_1
+    runs-on: ubuntu-latest
+    steps:
+      - name: print input 1 & 2
+        run: echo "input 1,2  ${{inputs.input_1}} + $ {{inputs.input_2}}"
