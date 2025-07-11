@@ -28,3 +28,9 @@ jobs:
     steps:
       - name: print input 1 & 2
         run: echo "input 1,2  ${{inputs.input_1}}  +  ${{inputs.input_2}}"
+  lavoro_4:
+    needs: [lavoro_1, lavoro_2]
+    runs-on: ubuntu-latest
+    steps:
+      - name: stampa
+        run: echo "end of job"
