@@ -1,6 +1,11 @@
 name: Chaining workflow
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      input_1:
+        description: "input uno"
+        type: string
 
 jobs:
   lavoro_1:
