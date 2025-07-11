@@ -27,4 +27,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print input 1 & 2
-        run: echo "input 1,2  ${{inputs.input_1}} + $ {{inputs.input_2}}"
+        run: echo "input 1,2  ${{inputs.input_1}}  +  ${{inputs.input_2}}"
