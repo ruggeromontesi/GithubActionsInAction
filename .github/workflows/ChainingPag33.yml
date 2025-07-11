@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: output something
-        run: echo "ruggero Montesi"
+        run: echo "input uno vale + ${{inputs.input_1}}"
