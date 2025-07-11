@@ -1,0 +1,10 @@
+name: Chaining workflow
+
+on: workflow_dispatch
+
+jobs:
+  lavoro_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: output something
+        run: echo "ruggero Montesi"
