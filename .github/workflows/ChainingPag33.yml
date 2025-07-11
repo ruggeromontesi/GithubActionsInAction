@@ -6,6 +6,9 @@ on:
       input_1:
         description: "input uno"
         type: string
+      input_2:
+        description: "input 2"
+        type: string
 
 jobs:
   lavoro_1:
@@ -13,3 +16,8 @@ jobs:
     steps:
       - name: output something
         run: echo "input uno vale + ${{inputs.input_1}}"
+  lavoro_2:
+    runs-on: windows-latest
+    steps:
+      - name: output input2
+        run: echo "input 2 vale  + $ {{inputs.input_2}}"
